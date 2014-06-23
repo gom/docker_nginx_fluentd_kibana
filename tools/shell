@@ -1,0 +1,1 @@
+docker run -i -t -p 8080:80 -p 9200:9200 -p 22268:22 gom68/fluentd_kibana /bin/bash

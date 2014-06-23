@@ -1,0 +1,4 @@
+#!/bin/sh
+_IP=$(docker inspect $(docker ps -l -q) | grep IPAddress | cut -d '"' -f 4)
+echo $_IP
+ssh -o StrictHostKeyChecking=no ubuntu@${_IP}
