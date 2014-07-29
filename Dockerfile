@@ -15,7 +15,7 @@ RUN apt-key add /var/tmp/RPM-GPG-KEY-td-agent && \
 # elasticsearch
 ADD http://packages.elasticsearch.org/GPG-KEY-elasticsearch /var/tmp/
 RUN apt-key add /var/tmp/GPG-KEY-elasticsearch && \
-    echo "deb http://packages.elasticsearch.org/elasticsearch/1.2/debian stable main" > /etc/apt/sources.list.d/elasticsearch.list
+    echo "deb http://packages.elasticsearch.org/elasticsearch/1.3/debian stable main" > /etc/apt/sources.list.d/elasticsearch.list
 
 # apt-get
 RUN sed -i s/us.archive.ubuntu.com/ftp.jaist.ac.jp/ /etc/apt/sources.list && \
